@@ -1,6 +1,7 @@
 import './app-info.css';
 
-const AppInfo = () => {
+const AppInfo = ({employees, increasedEmployees}) => {
+   
     return (
         <div className="app-info">
             <h1 className='app-info-head'>
@@ -8,12 +9,12 @@ const AppInfo = () => {
             </h1>
 
              <h2>
-                 Общее число сотрудников:
+                 Общее число сотрудников: {employees}
              </h2>
 
              <h2>
 
-                 Премированные сотрудники:
+                 Премированные сотрудники: {increasedEmployees}
              </h2>
         </div>
     );
